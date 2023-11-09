@@ -86,3 +86,20 @@ var finances = [
   ['Jan-2017', 138230],
   ['Feb-2017', 671099],
 ];
+
+// variable initialization: 
+var totalMonths = finances.length;
+var netProfitLosses = 0;
+var greatestNetProfit = 0;
+var greatestNetLoss = 0;
+
+
+
+// console Display
+console.log("Financial Analysis");
+console.log("------------------");
+console.log("Total Months:");
+console.log("Total: $");
+console.log("Average Change: $");
+console.log("Greatest Increase in Profits/Losses:");
+console.log("Greatest Decrease in Profits/Losses:");
