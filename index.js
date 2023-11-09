@@ -129,7 +129,7 @@ var avgChange = netChange / (totalMonths - 1);
 
 // console Display
 console.log("Financial Analysis");
-console.log("------------------");
+console.log("----------------------------------------------------------");
 console.log("Total Months:", totalMonths);
 console.log("Total: $", netProfitLosses);
 console.log("Average Change: $" + avgChange.toFixed(2));
@@ -141,3 +141,4 @@ console.log("Greatest Decrease in Profits/Losses:",
             greatestNetLoss.date, 
             "($" + greatestNetLoss.amount + ")"
 );
+console.log("----------------------------------------------------------");
