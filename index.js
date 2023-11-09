@@ -92,14 +92,26 @@ var totalMonths = finances.length;
 var netProfitLosses = 0;
 var greatestNetProfit = 0;
 var greatestNetLoss = 0;
+var avgChange = 0;
+
+for (var i = 0; i < finances.length; i++) {
+  // extracting the dates and profit/losses
+  var month = finances[i][0];
+  var profitLoss = finances[i][1];
+
+  // net profit/loss
+  netProfitLosses += profitLoss;
+
+  
+}
 
 
 
 // console Display
 console.log("Financial Analysis");
 console.log("------------------");
-console.log("Total Months:");
-console.log("Total: $");
+console.log("Total Months:", totalMonths);
+console.log("Total: $", netProfitLosses);
 console.log("Average Change: $");
 console.log("Greatest Increase in Profits/Losses:");
 console.log("Greatest Decrease in Profits/Losses:");
