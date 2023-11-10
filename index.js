@@ -97,25 +97,29 @@ var netChange = 0;
 
 // iterator
 for (var i = 0; i < finances.length; i++) {
-  // extracting the dates and profit/losses
+  // extracting the dates and profit/losses per iteration
   var date = finances[i][0];
   var profitLoss = finances[i][1];
 
-  // net profit/loss
+  // updating net profit/loss per iteration
   netProfitLosses += profitLoss;
 
-  //
+  // for the second iteration onwards
   if (i > 0) {
+    // calculating the change in net profit/loss between two consecutive months
     var change = finances[i][1] - finances[i - 1][1];
+    // updating net change
     netChange += change;
 
     // date and amount of largest increase in profit/loss
+    // this is applied only if the current value of change is greater than current greatestNetProfit
     if (change > greatestNetProfit.amount) {
       greatestNetProfit.amount = change;
       greatestNetProfit.date = date;
     }
 
     // date and amount of largest decrease in profit/loss
+    // this is applied only if the current value of change is greater than current greatestNetLoss
     if (change < greatestNetLoss.amount) {
       greatestNetLoss.amount = change;
       greatestNetLoss.date = date;
