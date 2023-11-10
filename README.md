@@ -44,6 +44,7 @@ Execute the script using a JavaScript runtime environment or a web browser conso
 Below is an example of the results displayed in the console.
 
 ```bash
+Financial Analysis
 ----------------------------------------------------------
 Total Months: 86
 Total: $38382578
