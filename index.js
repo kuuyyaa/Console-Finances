@@ -111,15 +111,15 @@ for (var i = 0; i < finances.length; i++) {
     // updating net change
     netChange += change;
 
-    // date and amount of largest increase in profit/loss
-    // this is applied only if the current value of change is greater than current greatestNetProfit
+    // date and amount of the largest increase in profit/loss
+    // this is applied only if the current value of change is greater than the current greatestNetProfit
     if (change > greatestNetProfit.amount) {
       greatestNetProfit.amount = change;
       greatestNetProfit.date = date;
     }
 
-    // date and amount of largest decrease in profit/loss
-    // this is applied only if the current value of change is greater than current greatestNetLoss
+    // date and amount of the largest decrease in profit/loss
+    // this is applied only if the current value of change is greater than the current greatestNetLoss
     if (change < greatestNetLoss.amount) {
       greatestNetLoss.amount = change;
       greatestNetLoss.date = date;
