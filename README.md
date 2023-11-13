@@ -1,6 +1,6 @@
 # Financial Analysis
 
-This JavaScript script analyzes financial data to provide insights into the dataset. It calculates key metrics such as the total number of months, net total of Profit/Losses, average change, greatest increase in profits, and greatest decrease in losses over the entire period.
+This JavaScript script analyzes financial data to provide insights into the dataset. It calculates key metrics such as the total number of months, net total of Profit/Losses, average change, greatest increase in profits, and greatest decrease in losses over the entire period. View demo [here](https://kuuyyaa.github.io/Console-Finances/).
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -52,3 +52,5 @@ Average Change: $-2315.12
 Greatest Increase in Profits/Losses: Feb-2012 ($1926159)
 Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167)
 ----------------------------------------------------------
+```
+
